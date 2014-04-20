@@ -40,7 +40,7 @@
 #-check wchmm			# for debug, enter debug shell mode
 #-check trellis			# for debug, enter debug shell mode
 #-check triphone		# for debug, enter debug shell mode
-#-demo				# same as "-quiet -progout"
+-demo				# same as "-quiet -progout"
 
 ####
 #### Audio Input
@@ -111,8 +111,8 @@
 #### 1st pass is on for microphone / adinnet / netaudio input, and
 #### off for others.
 ####
-#-realtime			# force real-time processing
--norealtime			# force non real-time processing
+-realtime			# force real-time processing
+#-norealtime			# force non real-time processing
 
 ####
 #### Plug-in

@@ -40,12 +40,12 @@
 #-check wchmm			# for debug, enter debug shell mode
 #-check trellis			# for debug, enter debug shell mode
 #-check triphone		# for debug, enter debug shell mode
-#-demo				# same as "-quiet -progout"
+-demo				# same as "-quiet -progout"
 
 ####
 #### Audio Input
 ####
-#-input mic    			# live microphone
+-input mic    			# live microphone
 #-input rawfile			# wavefile
 #-input mfcfile			# MFCC file (HTK Parameter file)
 #-input stdin			# waveform from standard input
