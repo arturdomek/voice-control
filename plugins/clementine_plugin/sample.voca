@@ -1,0 +1,26 @@
+% NS_B
+<s>								sil
+
+% NS_E
+</s>							sil
+
+% VOICE
+VOICE							v oy s
+
+% CONTROL
+CONTROL						k ax n t r ow l
+
+% COMMAND
+PLAY							p l ey
+PAUSED						p ao z d
+STOP							s t aa p
+PREVIOUS					p r iy v iy ax s
+NEXT							n eh k s t
+SHOW							sh ow
+
+% VOLUME
+VOLUME						v ax l ah m
+
+% VALUE
+UP								ah p
+DOWN							d aw n

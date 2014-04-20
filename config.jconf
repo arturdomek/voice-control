@@ -40,12 +40,12 @@
 #-check wchmm			# for debug, enter debug shell mode
 #-check trellis			# for debug, enter debug shell mode
 #-check triphone		# for debug, enter debug shell mode
-#-demo				# same as "-quiet -progout"
+-demo				# same as "-quiet -progout"
 
 ####
 #### Audio Input
 ####
-#-input mic    			# live microphone
+-input mic    			# live microphone
 #-input rawfile			# wavefile
 #-input mfcfile			# MFCC file (HTK Parameter file)
 #-input stdin			# waveform from standard input
@@ -60,7 +60,7 @@
 #-48				# 48kHz sampling > 16kHz conv. (16kHz only)
 #-NA devname			# hostname for DatLink server
 #-adport 5530			# port number for adinnet
-#-nostrip			# do not strip zero samples
+-nostrip			# do not strip zero samples
 #-zmean				# remove DC offset (use long input average)
 #-nozmean			# disable "-zmean" specified before
 
@@ -71,10 +71,10 @@
 ####
 #-cutsilence			# detection on
 #-nocutsilence			# detection off
-#-lv 2000			# level threshold (0-32767)
-#-zc 60				# zero-cross threshold (times in sec.)
+-lv 10000			# level threshold (0-32767)
+-zc 60			# zero-cross threshold (times in sec.)
 #-headmargin 300		# head silence margin (msec)
-#-tailmargin 400		# tail silence margin (msec)
+-tailmargin 400		# tail silence margin (msec)
 #-rejectshort 0			# reject shorter input (msec)
 
 ####
@@ -111,7 +111,7 @@
 #### 1st pass is on for microphone / adinnet / netaudio input, and
 #### off for others.
 ####
-#-realtime			# force real-time processing
+-realtime			# force real-time processing
 #-norealtime			# force non real-time processing
 
 ####
@@ -215,8 +215,8 @@
 #-gramlist txtfile		# text file containing grammar prefixes
 # !!!!!! VoxForge change, July 21, 2011
 #-dfa dfafile -v dictfile	# specify DFA and dictionary separately
--dfa grammar/sample.dfa
--v grammar/sample.dict
+-dfa plugins/clementine_plugin/sample.dfa
+-v plugins/clementine_plugin/sample.dict
 # !!!!!!
 
 #-nogram			# reset all grammar list already specified
@@ -257,8 +257,8 @@
 # !!!!!! VoxForge change, July 21, 2011
 #-h hmmfile			# acoustic HMM (ascii or Julius binary)
 #-hlist logicaltri		# HMMList to map logical phone to physical
--h acoustic_model_files/hmmdefs
--hlist acoustic_model_files/tiedlist
+-h julius_engine/acoustic_model_files/hmmdefs
+-hlist julius_engine/acoustic_model_files/tiedlist
 # !!!!!!
 
 #-tmix 2			# # of mixture to compute in a mixture PDF
