@@ -45,7 +45,7 @@
 ####
 #### Audio Input
 ####
-#-input mic    			# live microphone
+-input mic    			# live microphone
 #-input rawfile			# wavefile
 #-input mfcfile			# MFCC file (HTK Parameter file)
 #-input stdin			# waveform from standard input
@@ -215,8 +215,12 @@
 #-gramlist txtfile		# text file containing grammar prefixes
 # !!!!!! VoxForge change, July 21, 2011
 #-dfa dfafile -v dictfile	# specify DFA and dictionary separately
--dfa grammar/sample.dfa
--v grammar/sample.dict
+
+#default
+#-dfa grammar/sample.dfa
+#-v grammar/sample.dict
+#changed to all words
+-dfa grammar/al
 # !!!!!!
 
 #-nogram			# reset all grammar list already specified

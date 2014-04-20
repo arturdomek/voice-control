@@ -215,8 +215,14 @@
 #-gramlist txtfile		# text file containing grammar prefixes
 # !!!!!! VoxForge change, July 21, 2011
 #-dfa dfafile -v dictfile	# specify DFA and dictionary separately
--dfa grammar/sample.dfa
--v grammar/sample.dict
+
+#default
+#-dfa grammar/sample.dfa
+#-v grammar/sample.dict
+#changed to all words
+-dfa grammar/all_words/sample.dfa
+-v grammar/all_words/sample.dict
+
 # !!!!!!
 
 #-nogram			# reset all grammar list already specified
