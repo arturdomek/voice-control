@@ -3,6 +3,6 @@
 #Just run in terminal, and adjust your mic input volume.
 #Make sure that mic input level is not too high.
 
-./julius_engine/julius -C config.jconf
 
+python python_executor/main.py
 

@@ -14,14 +14,14 @@
 ######################################################################
 #### JULIUS APPLICATION OPTION (not a part of JuliusLib)
 ######################################################################
-#-outfile			# save each result in separate file
+#-outfile		# save each result in separate file
 #-separatescore			# print AM / LM scores separately
 #-callbackdebug			# print callback names at call for debug
 #-charconv from to		# print with character set conversion
 #-nocharconv			# disable "-charconv"
 #-module			# start in module mode
 #-record dir			# record each inputs into dir
-#-logfile file			# redirect logs to file
+-logfile init.log			# redirect logs to file
 #-nolog				# disable all logs
 #-help				# print help, and exit
 
@@ -35,12 +35,12 @@
 #-C jconffile			# include jconf file at here
 #-version			# print version info to stderr, and exit
 #-setting			# print version info to stderr, and exit
-#-quiet				# output less log
+-quiet				# output less log
 #-debug				# output more log for debug
 #-check wchmm			# for debug, enter debug shell mode
 #-check trellis			# for debug, enter debug shell mode
 #-check triphone		# for debug, enter debug shell mode
--demo				# same as "-quiet -progout"
+#-demo				# same as "-quiet -progout"
 
 ####
 #### Audio Input
@@ -111,8 +111,8 @@
 #### 1st pass is on for microphone / adinnet / netaudio input, and
 #### off for others.
 ####
--realtime			# force real-time processing
-#-norealtime			# force non real-time processing
+#-realtime			# force real-time processing
+-norealtime			# force non real-time processing
 
 ####
 #### Plug-in
@@ -335,7 +335,7 @@
 #### parameter (common)
 ####
 #-inactive			# start this process with inactive status
-#-1pass				# perform only the 1st pass, omit 2nd pass
+-1pass				# perform only the 1st pass, omit 2nd pass
 #-no_ccd			# switch off the phone context dependency
 #-force_ccd			# force on the phone context dependency
 #-cmalpha 0.05			# CM alpha value
