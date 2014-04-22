@@ -4,6 +4,7 @@ Make sure that mic input level is not too high.
 
 Note:
 This is an early version of program.
+<<<<<<< HEAD
 For now it is possible to control the music player Clementine using the command:
 MUSIC PLAY
 MUSIC PAUSED
@@ -13,6 +14,10 @@ MUSIC STOP
 MUSIC SHOW
 VOLUME UP
 VOLUME DOWN
+=======
+For now it is possible to control the music player Clementine using the command "voice control play" and "voice control pause".
+For more information, check the file main.py in folder python_executor, where you can modify the list of commands.
+>>>>>>> origin/master
 
 You can create your own plugin, which is a set of commands and grammar to the appropriate program.
 For more information, check the directory plugins/example.
