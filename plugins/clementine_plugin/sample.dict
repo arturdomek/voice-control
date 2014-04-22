@@ -1,13 +1,12 @@
 0	[<s>]	sil
 1	[</s>]	sil
-2	[VOICE]	v oy s
-3	[CONTROL]	k ax n t r ow l
-4	[PLAY]	p l ey
-4	[PAUSED]	p ao z d
-4	[STOP]	s t aa p
-4	[PREVIOUS]	p r iy v iy ax s
-4	[NEXT]	n eh k s t
-4	[SHOW]	sh ow
-5	[VOLUME]	v ax l ah m
-6	[UP]	ah p
-6	[DOWN]	d aw n
+2	[MUSIC]	m y uw z ix k
+3	[PLAY]	p l ey
+3	[PAUSED]	p ao z d
+3	[STOP]	s t aa p
+3	[PREVIOUS]	p r iy v iy ax s
+3	[NEXT]	n eh k s t
+3	[SHOW]	sh ow
+4	[VOLUME]	v ax l ah m
+5	[UP]	ah p
+5	[DOWN]	d aw n

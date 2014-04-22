@@ -1,0 +1,9 @@
+###[voice command]###	:	###[process command]###
+MUSIC PLAY 						: 		clementine --play
+MUSIC PAUSED 					:			clementine --pause
+MUSIC NEXT						:			clementine --next
+MUSIC PREVIOUS				:			clementine --previous
+MUSIC STOP						:			clementine --stop
+MUSIC SHOW						:			clementine --show-osd
+VOLUME UP							:			clementine --volume-up
+VOLUME DOWN						:			clementine --volume-down

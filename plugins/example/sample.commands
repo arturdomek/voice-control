@@ -1,0 +1,3 @@
+###[voice command]###	:	###[process command]###
+MUSIC PLAY 						: 		clementine --play
+MUSIC PAUSED 					:			clementine --pause

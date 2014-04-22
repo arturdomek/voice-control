@@ -5,40 +5,36 @@ import os
 import sys
 import subprocess
 
-def parser(out_log_line):
-	sentence = [item for item in out_log_line.split()]
-	commands = {
-		'play': 'clementine --play',
-		'paused': 'clementine --pause',
-		}
-	if sentence != []:
-		if sentence[0] == 'sentence1:' and len(sentence) > 2:
-			key = sentence[-1].lower()
-			if key in commands:
-				print 'COMMAND ACTIVATION'
-				subprocess.call(['espeak', '-v+f4', '-s', '140', 'COMMAND ACTIVATION'])
-				print commands[key]
-				txt2speech = ['espeak', '-v+f4', '-s', '140']
-				txt2speech.extend([commands[key]])
-				print txt2speech
-				subprocess.call(txt2speech)
-				subprocess.call(commands[key].split())
+from parser import *
+from commands import *
+
+PROGRAM_PATH = os.path.abspath(sys.path[0])
 
 def main():
-	f = open('output.log','w')
-	julius_path = os.path.join(os.path.abspath(sys.path[0]), '../julius_engine/julius')
-	config_path = os.path.join(os.path.abspath(sys.path[0]), '../config.jconf')
-	cmd = ' '.join([julius_path, '-C', config_path])
-	p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+	#open file to write log from julius
+	f = open(os.path.join(PROGRAM_PATH, '../output.log'), 'w')
+	#open command files and return dictionary of commands
+	commands_dict = read_commands()
+	#create absolute path to julius
+	julius_path = os.path.join(PROGRAM_PATH, '../julius_engine/julius')
+	config_path = os.path.join(PROGRAM_PATH, '../config.jconf')
+	cmd = [julius_path, '-C', config_path]
+	#open subprocess and read stdout
+	p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
 	while True:
+		#read stdout line
 		out = p.stdout.readline()
+		#check if line is empty or if subprocess has finished
 		if out == '' and p.poll() != None:
 			break
 		if out != '':
+			#write stdout to file
 			f.write(out)
+			#print stdout to terminal
 			sys.stdout.write(out)
 			sys.stdout.flush()
-			parser(out)
+			#parse stdout line
+			parser(out, commands_dict)
 			
 
 #test
