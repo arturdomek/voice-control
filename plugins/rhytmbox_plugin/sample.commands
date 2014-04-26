@@ -1,0 +1,8 @@
+###[voice command]###	:	###[process command]###
+MUSIC PLAY 						: 		rhythmbox-client --play
+MUSIC PAUSED 					:			rhythmbox-client --pause
+MUSIC NEXT						:			rhythmbox-client --next
+MUSIC PREVIOUS				:			rhythmbox-client --previous
+MUSIC SHOW						:			rhythmbox-client --print-playing
+VOLUME UP							:			rhythmbox-client --volume-up
+VOLUME DOWN						:			rhythmbox-client --volume-down

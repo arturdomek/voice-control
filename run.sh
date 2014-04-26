@@ -3,5 +3,9 @@
 #Just run in terminal, and adjust your mic input volume.
 #Make sure that mic input level is not too high.
 
-python $(cd `dirname ${0}`; pwd)/python_executor/main.py
+#PLUGIN_PATH="plugins/clementine_plugin/"
+#PLUGIN_PATH="plugins/rhytmbox_plugin/"
+PLUGIN_PATH="plugins/firefox_plugin/"
+
+python python_executor/main.py --path $PLUGIN_PATH
 

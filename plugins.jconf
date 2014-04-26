@@ -1,9 +1,0 @@
-#dfa files of plugins
-
-#clementine
--dfa plugins/clementine_plugin/sample.dfa
-
-#dict files of plugins
-
-#clementine
--v plugins/clementine_plugin/sample.dict

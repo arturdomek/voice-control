@@ -5,6 +5,6 @@ To create your own plugin:
 * run script make_dict.sh
 * modify sample.commands
 
-* open file plugins.jconf and append path to your .dfa and .dict files
+* open run.sh and replace path to your plugin dictionary
 
 Now you can use your plugin.

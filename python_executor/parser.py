@@ -16,7 +16,6 @@ def parser(out_log_line, commands_dict):
 		#check if sentence is correct
 		if sentence[0] == 'sentence1:' and len(sentence) > 2:
 			#create key to command dictionary
-			print "sentencja: ",sentence
 			key = ' '.join(sentence[2:])
 			#if command exist - activate it
 			if key in commands_dict:

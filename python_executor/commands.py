@@ -4,13 +4,14 @@
 import os
 import sys
 
-def read_commands():
+PROGRAM_PATH = os.path.abspath(sys.path[0])
+
+def read_commands(plugin_path):
 	commands_dict = {}
-	#open clementine commands file
-	f_clementine = open('plugins/clementine_plugin/sample.commands', 'r')
-	clementine_dict = file2dict(f_clementine)
-	commands_dict.update(clementine_dict)
-	
+	#open commands file
+	path = '../' + plugin_path + 'sample.commands'
+	f = open(os.path.join(PROGRAM_PATH, path), 'r')
+	commands_dict = file2dict(f)
 	return commands_dict
 
 def file2dict(f):

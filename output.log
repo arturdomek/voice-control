@@ -1,9 +1,6 @@
 STAT: include config: /home/artur/git/arturdomek/voice-control/python_executor/../config.jconf
-STAT: include config: /home/artur/git/arturdomek/voice-control/python_executor/../plugins.jconf
 
-pass1_best: <s> MUSIC PAUSED
-sentence1: <s> MUSIC PAUSED
+pass1_best: <s> OPEN YOUTUBE </s>
+sentence1: <s> OPEN YOUTUBE </s>
 pass1_best: <s>
 sentence1: <s>
-pass1_best: <s> MUSIC PLAY
-sentence1: <s> MUSIC PLAY

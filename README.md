@@ -4,7 +4,7 @@ Make sure that mic input level is not too high.
 
 Note:
 This is an early version of program.
-<<<<<<< HEAD
+
 For now it is possible to control the music player Clementine using the command:
 MUSIC PLAY
 MUSIC PAUSED

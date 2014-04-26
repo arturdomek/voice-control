@@ -21,8 +21,8 @@
 #-nocharconv			# disable "-charconv"
 #-module			# start in module mode
 #-record dir			# record each inputs into dir
-#-logfile init.log			# redirect logs to file
--nolog				# disable all logs
+-logfile init.log			# redirect logs to file
+#-nolog				# disable all logs
 #-help				# print help, and exit
 
 
@@ -32,7 +32,7 @@
 ####
 #### Misc. Options
 ####
--C plugins.jconf			# include plugins config file
+#-C plugins.jconf			# include plugins config file
 #-version			# print version info to stderr, and exit
 #-setting			# print version info to stderr, and exit
 -quiet				# output less log
